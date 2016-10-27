@@ -1,0 +1,21 @@
+dnginx:
+    image: zhiyinglei/nginx_tomee_mysql:dnginx
+    volumes:
+        - ~/.reactor/logs:/usr/share/nginx/html/logs
+    links:
+        - tomee:tomee
+    ports:
+        - "10080:10080"
+        - "10443:10443"
+tomee:
+    image: zhiyinglei/nginx_tomee_mysql:tomee
+    links:
+        - mysql
+mysql:
+    image: zhiyinglei/nginx_tomee_mysql:mysql
+    environment:
+        - MYSQL_ROOT_PASSWORD=my-secret-pw
+    volumes:
+        - ~/mount_dockers/mysql:/var/lib/mysql
+    ports:
+        - "3306:3306"
