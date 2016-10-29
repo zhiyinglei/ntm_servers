@@ -5,8 +5,8 @@
 1. install docker and docker-compose
 
 2. make directory for mounting point
- 
-      cd ntm_servers
+   
+      
 
 3. create a index file for logs 
 
