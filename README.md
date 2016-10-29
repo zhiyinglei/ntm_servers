@@ -16,7 +16,9 @@
 
           git clone https://github.com/zhiyinglei/ntm_servers.git
 
-5. From cloud
+5. obtain images and start services
+
+== From cloud
 
  a. download images
 
@@ -30,7 +32,7 @@
 
       docker-compose up -d
      
-5. From source
+== From source
 
  a. go to source directory
  
