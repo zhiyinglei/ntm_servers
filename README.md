@@ -10,7 +10,7 @@
 
 4. git clone https://github.com/zhiyinglei/ntm_servers.git
 
-# From cloud
+From cloud
 a. download images
 
      docker pull zhiyinglei/ntm_servers -a
@@ -21,7 +21,7 @@ c. start services
   
      docker-compose up -d
      
-# From source
+From source
 
 a. cd ntm_servers/source
 
