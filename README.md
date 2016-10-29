@@ -7,6 +7,8 @@
 2. make directory for mounting point
 
       cd && mkdir -p .reactor/logs/ && mkdir -p mount_dockers/mysql
+      
+      
 
 3. create a index file for logs 
 
