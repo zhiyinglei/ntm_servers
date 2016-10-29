@@ -13,7 +13,7 @@
       echo "index in log" > ~/.reactor/logs/index.html
 
 4. clone the repo
-
+ 
       git clone https://github.com/zhiyinglei/ntm_servers.git
 
 5. From cloud
