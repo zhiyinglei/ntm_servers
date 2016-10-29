@@ -18,7 +18,7 @@
 
 ###5. obtain images and start services
 
- ###From cloud  
+####From cloud  
 
   a. ~~download images (this step not necessary)~~
       
@@ -32,7 +32,7 @@
 
        docker-compose up -d
 
- ####From source 
+####From source 
 
   a. go to source directory
 
