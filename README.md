@@ -21,8 +21,8 @@
  * From cloud  
 
   a. ~~download images (this step not necessary)~~
-
-      ~~docker pull zhiyinglei/ntm_servers -a ~~
+      
+     ~~docker pull zhiyinglei/ntm_servers -a ~~
 
   b. go to cloud start up directory 
 
