@@ -4,9 +4,9 @@
 
 ###1. install docker and docker-compose
 
-###2. make directory for mounting point
+###2. make directories for mounting points
 
-         cd && mkdir -p .reactor/logs/ && mkdir -p mount_dockers/mysql
+         mkdir -p ~/.reactor/logs/ && mkdir -p ~/mount_dockers/mysql
 
 ###3. create a index file for logs 
 
