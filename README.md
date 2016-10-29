@@ -10,24 +10,25 @@
 
 4. git clone https://github.com/zhiyinglei/ntm_servers.git
 
-From cloud
-a. download images
+5. From cloud
 
-     docker pull zhiyinglei/ntm_servers -a
+ a. download images
 
-b. cd ntm_servers
+      docker pull zhiyinglei/ntm_servers -a
 
-c. start services 
-  
-     docker-compose up -d
+ b. cd ntm_servers
+
+ c. start services 
+
+      docker-compose up -d
      
-From source
+5. From source
 
-a. cd ntm_servers/source
+ a. cd ntm_servers/source
 
-b. start services 
-  
-     docker-compose up -d --build
+ b. start services 
+
+      docker-compose up -d --build
 
 
 6. visit localhost with your browser
