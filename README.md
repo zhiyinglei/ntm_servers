@@ -1,27 +1,49 @@
  
 
-# nginx tomee mysql servers 
+# nginx tomee mysql servers guide:
 
 1. install docker and docker-compose
 
-2. cd && mkdir -p .reactor/logs/ && mkdir -p mount_dockers/mysql
+2. make directory for mounting point
 
-3. echo "index in log" > ~/.reactor/logs/index.html
+         cd && mkdir -p .reactor/logs/ && mkdir -p mount_dockers/mysql
 
-4. download images
+3. create a index file for logs 
 
-     docker pull zhiyinglei/nginx_tomee_mysql -a
-     
-5. git clone https://github.com/zhiyinglei/ntm_servers.git
+         echo "index in log" > ~/.reactor/logs/index.html
 
-6. cd ntm_servers
+4. clone repo
 
-7. start services 
-  
-     docker-compose up -d
-     
+          git clone https://github.com/zhiyinglei/ntm_servers.git
 
-8. visit localhost with your browser
+5. obtain images and start services
+
+ * From cloud  
+
+  a. download images
+
+       docker pull zhiyinglei/ntm_servers -a
+
+  b. go to cloud start up directory 
+
+       cd ntm_servers
+
+  c. start services 
+
+       docker-compose up -d
+
+ * From source 
+
+  a. go to source directory
+
+       cd ntm_servers/source
+
+  b. build and start services 
+
+       docker-compose up -d --build
+
+
+6. visit localhost with your browser
 
    https://localhost:10443/logs/
 
@@ -32,19 +54,19 @@
    http://localhost:10080/logs/
 
 
-9. mysql shell
+7. mysql shell
    
-   mysql -h HOST_IP -P 3306 -ureactor  -pp@ssword
+         mysql -h HOST_IP -P 3306 -ureactor  -pp@ssword
 
-10. reset database
+8. reset database
     
-    rm -rf ~/mount_dockers/mysql/ && mkdir -p ~/mount_dockers/mysql
+         rm -rf ~/mount_dockers/mysql/ && mkdir -p ~/mount_dockers/mysql
     
-    docker-compose up -d
+         docker-compose up -d
 
-11. stop services
+9. stop services
     
-    docker rm $(docker ps -aq) -f  # in another terminal window
+         docker rm $(docker ps -aq) -f  # in another terminal window
 
 
 # note: 
