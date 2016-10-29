@@ -44,7 +44,7 @@
 
 7. mysql shell
    
-   mysql -h HOST_IP -P 3306 -ureactor  -pp@ssword
+       mysql -h HOST_IP -P 3306 -ureactor  -pp@ssword
 
 8. reset database
     
