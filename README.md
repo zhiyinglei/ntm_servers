@@ -18,7 +18,7 @@
 
 ###5. obtain images and start services
 
- ####From cloud  
+ ###From cloud  
 
   a. ~~download images (this step not necessary)~~
       
