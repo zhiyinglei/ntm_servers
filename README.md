@@ -8,7 +8,7 @@
 
       cd && mkdir -p .reactor/logs/ && mkdir -p mount_dockers/mysql
       
-      cd ntm_servers      
+      cd ntm_servers/source
 
 3. create a index file for logs 
 
