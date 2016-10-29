@@ -12,7 +12,7 @@
 
          echo "index in log" > ~/.reactor/logs/index.html
 
-4. clone the repo
+4. clone repo
 
           git clone https://github.com/zhiyinglei/ntm_servers.git
 
@@ -36,7 +36,7 @@
  
       cd ntm_servers/source
 
- b. start services 
+ b. build and start services 
 
       docker-compose up -d --build
 
