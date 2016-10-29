@@ -18,29 +18,29 @@
 
 5. obtain images and start services
 
-* From cloud  
+ * From cloud  
 
- a. download images
+  a. download images
 
-      docker pull zhiyinglei/ntm_servers -a
+       docker pull zhiyinglei/ntm_servers -a
 
- b. go to cloud start up directory 
- 
-      cd ntm_servers
+  b. go to cloud start up directory 
 
- c. start services 
+       cd ntm_servers
 
-      docker-compose up -d
-     
-* From source 
+  c. start services 
 
- a. go to source directory
- 
-      cd ntm_servers/source
+       docker-compose up -d
 
- b. build and start services 
+ * From source 
 
-      docker-compose up -d --build
+  a. go to source directory
+
+       cd ntm_servers/source
+
+  b. build and start services 
+
+       docker-compose up -d --build
 
 
 6. visit localhost with your browser
