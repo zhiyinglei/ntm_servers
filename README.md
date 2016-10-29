@@ -4,11 +4,17 @@
 
 1. install docker and docker-compose
 
-2. cd && mkdir -p .reactor/logs/ && mkdir -p mount_dockers/mysql
+2. make directory for mounting point
 
-3. echo "index in log" > ~/.reactor/logs/index.html
+      cd && mkdir -p .reactor/logs/ && mkdir -p mount_dockers/mysql
 
-4. git clone https://github.com/zhiyinglei/ntm_servers.git
+3. create a index file for logs 
+
+      echo "index in log" > ~/.reactor/logs/index.html
+
+4. clone the repo
+
+      git clone https://github.com/zhiyinglei/ntm_servers.git
 
 5. From cloud
 
@@ -16,7 +22,9 @@
 
       docker pull zhiyinglei/ntm_servers -a
 
- b. cd ntm_servers
+ b. go to cloud start up directory 
+ 
+      cd ntm_servers
 
  c. start services 
 
@@ -24,7 +32,9 @@
      
 5. From source
 
- a. cd ntm_servers/source
+ a. go to source directory
+ 
+      cd ntm_servers/source
 
  b. start services 
 
@@ -50,11 +60,11 @@
     
          rm -rf ~/mount_dockers/mysql/ && mkdir -p ~/mount_dockers/mysql
     
-    docker-compose up -d
+         docker-compose up -d
 
 9. stop services
     
-    docker rm $(docker ps -aq) -f  # in another terminal window
+         docker rm $(docker ps -aq) -f  # in another terminal window
 
 
 # note: 
