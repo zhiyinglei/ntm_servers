@@ -2,13 +2,13 @@
 
 # nginx tomee mysql servers guide:
 
-1. install docker and docker-compose
+###1. install docker and docker-compose
 
-2. make directory for mounting point
+###2. make directory for mounting point
 
          cd && mkdir -p .reactor/logs/ && mkdir -p mount_dockers/mysql
 
-3. create a index file for logs 
+###3. create a index file for logs 
 
          echo "index in log" > ~/.reactor/logs/index.html
 
