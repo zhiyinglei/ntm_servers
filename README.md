@@ -12,13 +12,13 @@
 
          echo "index in log" > ~/.reactor/logs/index.html
 
-4. clone repo
+###4. clone repo
 
           git clone https://github.com/zhiyinglei/ntm_servers.git
 
-5. obtain images and start services
+###5. obtain images and start services
 
- * From cloud  
+ ####* From cloud  
 
   a. ~~download images (this step not necessary)~~
       
@@ -32,7 +32,7 @@
 
        docker-compose up -d
 
- * From source 
+ ####* From source 
 
   a. go to source directory
 
@@ -43,7 +43,7 @@
        docker-compose up -d --build
 
 
-6. visit localhost with your browser
+###6. visit localhost with your browser
 
    https://localhost:10443/logs/
 
@@ -54,17 +54,17 @@
    http://localhost:10080/logs/
 
 
-7. mysql shell
+###7. mysql shell
    
          mysql -h HOST_IP -P 3306 -ureactor  -pp@ssword
 
-8. reset database
+###8. reset database
     
          rm -rf ~/mount_dockers/mysql/ && mkdir -p ~/mount_dockers/mysql
     
          docker-compose up -d
 
-9. stop services
+###9. stop services
     
          docker rm $(docker ps -aq) -f  # in another terminal window
 
