@@ -21,6 +21,7 @@
  * From cloud  
 
   a. download images (this step not necessary)
+  ~~this~~
 
        docker pull zhiyinglei/ntm_servers -a
 
