@@ -1,5 +1,5 @@
 dnginx:
-    image: zhiyinglei/nginx_tomee_mysql:dnginx
+    image: zhiyinglei/ntm_servers:dnginx
     volumes:
         - ~/.reactor/logs:/usr/share/nginx/html/logs
     links:
@@ -8,11 +8,11 @@ dnginx:
         - "10080:10080"
         - "10443:10443"
 tomee:
-    image: zhiyinglei/nginx_tomee_mysql:tomee
+    image: zhiyinglei/ntm_servers:tomee
     links:
         - mysql
 mysql:
-    image: zhiyinglei/nginx_tomee_mysql:mysql
+    image: zhiyinglei/ntm_servers:mysql
     environment:
         - MYSQL_ROOT_PASSWORD=my-secret-pw
     volumes:
