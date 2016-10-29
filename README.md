@@ -10,11 +10,11 @@
 
 3. create a index file for logs 
 
-      echo "index in log" > ~/.reactor/logs/index.html
+         echo "index in log" > ~/.reactor/logs/index.html
 
 4. clone the repo
- 
-      git clone https://github.com/zhiyinglei/ntm_servers.git
+
+          git clone https://github.com/zhiyinglei/ntm_servers.git
 
 5. From cloud
 
