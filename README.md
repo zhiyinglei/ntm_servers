@@ -45,13 +45,13 @@
 
 ###6. visit localhost with your browser
 
-   https://localhost:10443/logs/
+         https://localhost:10443/logs/
 
-   https://localhost:10443/rr/
-   
-   http://localhost:10080/logs/
+         https://localhost:10443/rr/
 
-   http://localhost:10080/logs/
+         http://localhost:10080/logs/
+
+         http://localhost:10080/logs/
 
 
 ###7. mysql shell
