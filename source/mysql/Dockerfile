@@ -40,8 +40,8 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCB
 
 ENV MYSQL_MAJOR 5.6
 # ENV MYSQL_VERSION 5.6.34-1debian8
-ENV MYSQL_VERSION 5.6.34-1ubuntu14.04
-
+#ENV MYSQL_VERSION 5.6.34-1ubuntu14.04
+ENV MYSQL_VERSION 5.6.35-1ubuntu14.04
 
 RUN echo "deb http://repo.mysql.com/apt/ubuntu/ trusty  mysql-${MYSQL_MAJOR}" > /etc/apt/sources.list.d/mysql.list
 
